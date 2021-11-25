@@ -11,8 +11,8 @@ export const linkData = [
     },
     {
         id:3,
-        text:"product",
-        path:"/product"
+        text:"products",
+        path:"/products"
     },
     {
         id:4,

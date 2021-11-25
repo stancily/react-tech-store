@@ -10,7 +10,7 @@ export default function Sidebar() {
             const { links, sidebarOpen, handleSidebar } =
             value;
             return (
-            <SideWrapper>
+            <SideWrapper show={sidebarOpen}>
                 <ul>
                     {links.map(link =>{
                         return (
@@ -42,7 +42,7 @@ background: var(--mainGrey);
 z-index:1;
 border-right: 4px solid var(--primaryColor);
 transition: var(--mainTransition);
-transform: ${props => (props.show?"translateX(0)": 
+transform: ${props => (props.show? "translateX(0)": 
 "translateX(-100%)")};
 ul {
     list-style-type: none;
