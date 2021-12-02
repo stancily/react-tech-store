@@ -28,12 +28,11 @@ class App extends Component {
           <Route path= "/about"  component={About}/>
           <Route path= "/contact"  component={Contact}/>
           <Route path= "/product/:id" exact component={SingleProduct}/>
-          <Route path= "/products" exact component={Products}/>
-          <Route path= "/cart" exact component={Cart}/>
+          <Route path= "/products" component={Products}/>
+          <Route path= "/cart" component={Cart}/>
           <Route component={Default}/>
         </Switch>
         <Footer />
-        
         </>
     );
   }
